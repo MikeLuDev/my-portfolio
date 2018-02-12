@@ -48,10 +48,20 @@ const ProjectLinks = ({projects}) => (
   </div>
 );
 
+const ExternalSite = ({}) => (
+  <a href="http://www.codepen.io" className="portfolio-external-site">
+    <img src="http://via.placeholder.com/128x128" />
+    <div>
+      <h2>External Site Name</h2>
+      <p>External site info</p>
+    </div>
+  </a>
+);
+
 const PortfolioHead = ({}) => (
   <div className="portfolio-head">
     <h3>
-      Below are a few of my projects - both personal and professional.
+      Below are a few of my favorite projects - both personal and professional.
     </h3>
   </div>
 );
@@ -61,6 +71,14 @@ const Portfolio = () => (
     <h1>Portfolio</h1>
     <PortfolioHead />
     <ProjectLinks projects={projects} />
+
+    <h1>...want to see even more?</h1>
+
+    <div className="portfolio-external-sites-wrap">
+      <ExternalSite />
+      <ExternalSite />
+      <ExternalSite />
+    </div>
   </div>
 )
 

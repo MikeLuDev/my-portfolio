@@ -51,9 +51,9 @@ const cards = [
     heading: "Traveller",
     content: [
       <blockquote>
-        “Travel is <strong>fatal</strong> to prejudice, bigotry, and narrow-mindedness,
+        “Travel is fatal to prejudice, bigotry, and narrow-mindedness,
         and many of our people need it sorely on these accounts. 
-        Broad, wholesome, charitable views of men and things <strong>cannot</strong> be acquired by vegetating
+        Broad, wholesome, charitable views of men and things cannot be acquired by vegetating
         in one little corner of the earth all one's lifetime.” 
       </blockquote>,
       <p className="attribution">― Mark Twain, The Innocents Abroad/Roughing It</p>,
@@ -90,7 +90,7 @@ const IndexCards = ({cards}) => (
 const IndexPage = () => (
   <div className="index-wrap">
     <div className="index-hero">
-      <h1>Welcome to my piece of the internet.</h1>
+      <h1>Welcome to my little piece of the internet.</h1>
       <button className="btn-primary">Learn more about me</button>
     </div>
     <div className="index-content">

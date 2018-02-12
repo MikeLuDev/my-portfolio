@@ -5,35 +5,40 @@ import Helmet from 'react-helmet'
 
 import './index.css'
 
-class NavItem extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {}
-  }
-  render() {
-    return (
-      <Link className="nav-link" to={(this.props.title == "Home") ? "/" : this.props.title.toLowerCase()}>
-        {this.props.title}
-      </Link>
-    );
-  }
-}
+const NavItem = ({title}) => (
+  <Link 
+    id={`nav-link-${title}`}
+    className={`nav-link`} 
+    to={(title == "home") ? "/" : title}
+  >
+    {title.charAt(0).toUpperCase() + title.slice(1)}
+  </Link>
+);
 
 const Header = () => (
   <header>
     <div className="header-wrap">
         <img className="header-logo" src="http://via.placeholder.com/128x128"></img>
-        <NavItem title="Home" />
-        <NavItem title="Travel" />
-        <NavItem title="Portfolio" />
-        <NavItem title="Contact" /> 
+        <NavItem title="home" />
+        <NavItem title="travel" />
+        <NavItem title="portfolio" />
+        <NavItem title="contact" /> 
       </div>
   </header>
 )
 
 const Footer = ({}) => (
   <footer>
-    <p>Made by me, of course.</p>
+    <div className="footer-wrap">
+      <div className="footer-left">
+        <h3>About this site:</h3>
+        <p>The design and construction of this website is done entirely by me.</p>
+        <p>Primary tools include React and Gatsby.</p>
+      </div>
+      <div className="footer-right">
+        <p>For business inquiries or any questions please <Link to="contact">contact me.</Link> <a></a></p>
+      </div>
+    </div>
   </footer>
 );
 

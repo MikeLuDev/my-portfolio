@@ -14,6 +14,10 @@
   --max-width: 50rem;
 }
 
+.template-wrapper {
+  min-height: 100vh;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -72,6 +76,7 @@ blockquote {
 .attribution {
   text-align: right;
   font-size: 0.9rem;
+  font-weight: 500;
 }
 
 hr {
@@ -103,7 +108,7 @@ a {
 }
 
 a:hover {
-  text-shadow: 0 0 1px var(--brand-grey);
+  text-decoration: underline;
 }
 
 a:visited {
@@ -182,13 +187,13 @@ header {
   font-size: 1.25rem;
   padding: 0.75rem 1rem;
   transition: background-color 0.2s ease-in-out;
-  color: #fafafa !important;
-  font-weight: 300 !important;
+  color: var(--brand-white) !important;
+  font-weight: 500 !important;
   margin-right: 0.5rem;
   border-radius: var(--boder-radius);
 }
 
-.nav-link:hover, .nav-link:active {
+.nav-link:hover, .nav-link:active, .nav-link.active {
   background: var(--brand-secondary);
   text-decoration: none;
   text-shadow: 0;
@@ -204,18 +209,41 @@ footer {
   text-align: center;
   background: var(--brand-text-soft);
   color: var(--brand-white);
-  padding: 1rem 1rem;
   margin-top: 4rem;
   box-shadow: 0 4px 10px 1px var(--brand-text-soft);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
 }
 
 footer * {
   color: var(--brand-grey);
-  margin: 0;
+}
+
+footer p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-wrap {
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.footer-left, .footer-right {
+  width: 50%;
+}
+
+.footer-left {
+  text-align: left;
+  padding-right: 2rem;
+}
+
+.footer-right {
+  text-align: right;
+  padding-left: 2rem;
 }
 
 
@@ -234,6 +262,8 @@ footer * {
 }
 
 .index-hero > h1 {
+  max-width: var(--max-width);
+  margin: 0 auto;
   margin-bottom: 2rem;
 }
 
@@ -263,13 +293,25 @@ footer * {
 
 /******* Portfolio *******/
 
-.portfolio-project-container {
-  text-align: left;
+.portfolio-wrap {
   max-width: var(--max-width);
   margin: 0 auto;
+}
+
+.portfolio-wrap > h1 {
+  margin-bottom: 2rem;
+}
+
+.portfolio-head {
+  margin-bottom: 6rem;
+}
+
+.portfolio-project-container {
+  text-align: left;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 6rem;
 }
 
 .portfolio-project-card {
@@ -279,12 +321,31 @@ footer * {
   margin: 0.5rem 0.5rem;
   padding: 0.5rem 0.5rem;
   height: 10rem;
+  color: var(--brand-secondary) !important; 
+  transition: all 0.1s ease-in;
 }
 
-.project-card:hover {
-  color: var(--brand-white);
-  cursor: pointer;
+.portfolio-project-card:hover {
+  transform: scale(1.05);
+  text-decoration: none !important;
 }
+
+.portfolio-external-sites-wrap {
+  margin-bottom: 6rem;
+}
+
+.portfolio-external-site {
+  text-align: left;
+  display: flex;
+  transition: all 150ms ease-in-out !important;
+  margin-bottom: 2rem;
+}
+
+.portfolio-external-site > div {
+  padding-left: 2rem;
+  width: 100%;
+}
+
 
 /******* Contact *******/
 
@@ -292,6 +353,10 @@ footer * {
   text-align: left;
   max-width: var(--max-width);
   margin: 0 auto;
+}
+
+.contact-wrap > h1 {
+  margin-bottom: 2rem;
 }
 
 .contact-form {
@@ -308,6 +373,6 @@ footer * {
 }
 
 .contact-form-message {
-  padding: 1rem 1rem;
+  padding: 0 1rem 0 1rem;
   width: 50%;
 }

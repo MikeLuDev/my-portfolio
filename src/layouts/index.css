@@ -139,22 +139,41 @@ button, .btn {
   margin: 0;
 }
 
-button:hover {
+button:hover, .btn:hover {
   background: var(--brand-white);
   border: 3px solid var(--brand-secondary);
   color: var(--brand-secondary);
+  text-decoration: none;
 }
 
 .btn-primary {
   background: var(--brand-secondary);
+  color: var(--brand-white) !important;
+}
+
+.btn-primary:hover {
+  color: var(--brand-secondary) !important;
+  border: 3px solid var(--brand-secondary);
 }
 
 .btn-success {
   background: var(--brand-primary);
+  color: var(--brand-white) !important;
+}
+
+.btn-success:hover {
+  color: var(--brand-primary) !important;
+  border: 3px solid var(--brand-primary);
 }
 
 .btn-danger {
   background: var(--brand-danger);
+  color: var(--brand-white) !important;
+}
+
+.btn-danger:hover {
+  color: var(--brand-danger) !important;
+  border: 3px solid var(--brand-danger);
 }
 
 /******* Cards *******/
@@ -263,8 +282,8 @@ footer h3 {
 /******* Index *******/
 
 .index-hero {
-  background-image: url("/img/blazek-1200.jpg");
-  background-position: center top;
+  background-image: url("/img/stars.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10vw 2rem;
@@ -275,9 +294,10 @@ footer h3 {
 }
 
 .index-hero > h1 {
-  max-width: var(--max-width);
   margin: 0 auto;
   margin-bottom: 2rem;
+  color: var(--brand-grey);
+  max-width: var(--max-width);
 }
 
 .index-content {

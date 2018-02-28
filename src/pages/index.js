@@ -91,9 +91,8 @@ const IndexPage = () => (
   <div className="index-wrap">
     <div className="index-hero">
       <h1>Welcome to my little piece of the internet.</h1>
-      <button className="btn-primary">Learn more about me</button>
     </div>
-    <div className="index-content">
+    <div className="index-content" id="index-content">
       <h1>About me</h1>
       <IndexCards cards={cards}/>
     </div>

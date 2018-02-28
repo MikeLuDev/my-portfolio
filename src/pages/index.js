@@ -36,15 +36,25 @@ const cards = [
   {
     heading: "Musician",
     content: [
-      <p>From 2012-2016 I attended the University of South Carolina and obtained a
-      Bachelor's of Music with an emphasis in Vocal Performance.</p>,
-      <p>During my time there, I studied opera, jazz, music theory, composition, history, choral music, 
-      conducting, and piano to say the least.
-      I wanted to learn as much as possible about music, particularly singing, and to
-      master the art of it as much as I could in that time.</p>,
-      <p>I still actively practice, perform, and produce all sorts of music.
-      The newest frontier is <strong>guitar</strong>, which I picked up because I intend
-      to travel the US starting in April and I can't exactly lug my keyboard everywhere I go.</p>
+      <p>
+        From 2012-2016 I attended the University of South Carolina and obtained a
+        Bachelor's of Music with an emphasis in Vocal Performance.
+      </p>,
+      <p>
+        During my time there, I studied opera, jazz, music theory, composition, history, choral music, 
+        conducting, and piano to say the least.
+        I wanted to learn as much as possible about music, particularly singing, and to
+        master the art of it as much as I could in that time.
+      </p>,
+      <p>
+        I still actively practice, perform, and produce all sorts of music.
+        The newest frontier is <strong>guitar</strong>, which I picked up because I intend
+        to travel the US starting in April and I can't exactly lug my keyboard everywhere I go.
+      </p>,
+      <p>
+        Right now I'm preparing for a production of Rossini's <em>La Cambiale di Matrimonio</em> with
+        Opera at USC.
+      </p>
     ]
   },
   {

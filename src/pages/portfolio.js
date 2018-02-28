@@ -1,6 +1,21 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+let sites = [
+  {
+    name: "Codepen",
+    href: "https://codepen.io/MikeLuDev/#",
+    info: "A collection of fun little apps, doodles, and tests. Mostly front end stuff.",
+    img: "/img/codepen-logo.png"
+  },
+  {
+    name: "Github",
+    href: "https://github.com/MikeLuDev",
+    info: "My public repos, including the code for this site.",
+    img: "/img/github-logo.png"
+  }
+];
+
 let projects = [
   {
     name: "Project Name",
@@ -41,19 +56,27 @@ const ProjectCard = ({name, href, img}) => (
 );
 
 const ProjectLinks = ({projects}) => (
-  <div className="portfolio-project-container">
+  <div className="portfolio-project-container" target="_blank" rel="noopener">
     {projects.map((project, index) => (
       <ProjectCard key={`portfolio-project-card-${index}`} name={project.name} href={project.href} img={project.img} />
     ))}
   </div>
 );
 
-const ExternalSite = ({}) => (
-  <a href="http://www.codepen.io" className="portfolio-external-site">
-    <img src="http://via.placeholder.com/128x128" />
+const ExternalSites = ({sites}) => (
+  <div className="portfolio-external-sites-wrap">
+    {sites.map((site, index) => (
+      <ExternalSite name={site.name} href={site.href} info={site.info} img={site.img} />
+    ))}
+  </div>
+)
+
+const ExternalSite = ({name, href, info, img}) => (
+  <a href={href} className="portfolio-external-site" target="_blank" rel="noopener">
+    <img src={img} />
     <div>
-      <h2>External Site Name</h2>
-      <p>External site info</p>
+      <h2>{name}</h2>
+      <p>{info}</p>
     </div>
   </a>
 );
@@ -74,11 +97,8 @@ const Portfolio = () => (
 
     <h1>...want to see even more?</h1>
 
-    <div className="portfolio-external-sites-wrap">
-      <ExternalSite />
-      <ExternalSite />
-      <ExternalSite />
-    </div>
+    <ExternalSites sites={sites} />
+
   </div>
 )
 

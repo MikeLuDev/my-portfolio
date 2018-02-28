@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const Travel = () => (
+const Blog = () => (
   <div>
-    <h1>Travel</h1>
+    <h1>Blog</h1>
   </div>
 )
 
-export default Travel;
+export default Blog;

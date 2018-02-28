@@ -20,7 +20,7 @@ const Header = () => (
     <div className="header-wrap">
         <img className="header-logo" src="http://via.placeholder.com/128x128"></img>
         <NavItem title="home" />
-        <NavItem title="travel" />
+        <NavItem title="blog" />
         <NavItem title="portfolio" />
         <NavItem title="contact" /> 
       </div>
@@ -31,11 +31,12 @@ const Footer = ({}) => (
   <footer>
     <div className="footer-wrap">
       <div className="footer-left">
-        <h3>About this site:</h3>
+        <h3>About this site</h3>
         <p>The design and construction of this website is done entirely by me.</p>
         <p>Primary tools include React and Gatsby.</p>
       </div>
       <div className="footer-right">
+        <h3>Want to get in touch?</h3>
         <p>For business inquiries or any questions please <Link to="contact">contact me.</Link> <a></a></p>
       </div>
     </div>

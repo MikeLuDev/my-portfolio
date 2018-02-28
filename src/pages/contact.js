@@ -23,7 +23,7 @@ const ContactForm = () => (
     <input type="text" />
     Message:
     <textarea type="textarea" />
-    <input className="btn" type="submit" value="Send" />
+    <input className="btn btn-success" type="submit" value="Send" />
   </form>
 );
 

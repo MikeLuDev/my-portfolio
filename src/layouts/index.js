@@ -5,25 +5,26 @@ import Helmet from 'react-helmet'
 
 import './index.css'
 
+let pathName = window.location.pathname;
+
+let links = ["home", "blog", "music", "portfolio", "contact"];
+
 const NavItem = ({title}) => (
   <Link 
     id={`nav-link-${title}`}
     className={`nav-link`} 
-    to={(title == "home") ? "/" : title}
-  >
+    to={(title == "home") ? "/" : title}>
     {title.charAt(0).toUpperCase() + title.slice(1)}
   </Link>
 );
 
-const Header = () => (
+const Header = ({links}) => (
   <header>
     <div className="header-wrap">
         <img className="header-logo" src="http://via.placeholder.com/128x128"></img>
-        <NavItem title="home" />
-        <NavItem title="blog" />
-        <NavItem title="music" />
-        <NavItem title="portfolio" />
-        <NavItem title="contact" /> 
+        {links.map((link, index) => (
+          <NavItem title={link} pathName={pathName} key={`nav-link-${index}`} />
+        ))}
       </div>
   </header>
 )
@@ -33,7 +34,7 @@ const Footer = ({}) => (
     <div className="footer-wrap">
       <div className="footer-left">
         <h3>About this site</h3>
-        <p>The design and construction of this website is done entirely by me.</p>
+        <p>The design and construction of this website was done entirely by me.</p>
         <p>Primary tools include React and Gatsby.</p>
       </div>
       <div className="footer-right">
@@ -44,6 +45,7 @@ const Footer = ({}) => (
   </footer>
 );
 
+/* WRITE A BLOG POST ABOUT THIS
 const TemplateWrapper = ({ children }) => (
   <div className="template-wrapper">
     <Helmet
@@ -53,13 +55,41 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header />
+    <Header links={links} />
     <div className="main-content">
       {children()}
     </div>
     <Footer />
   </div>
-)
+)*/
+
+class TemplateWrapper extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+    }    
+  }
+
+  render() {
+    console.log(this.state.window_path);
+    return (
+      <div className="template-wrapper">
+        <Helmet
+          title="Michael Lu | Web Developer"
+          meta={[
+            { name: 'description', content: 'Sample' },
+            { name: 'keywords', content: 'sample, something' },
+          ]}
+        />
+        <Header links={links} />
+        <div className="main-content">
+          {this.props.children()}
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+}
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,

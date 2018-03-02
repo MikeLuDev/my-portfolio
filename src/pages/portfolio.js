@@ -95,7 +95,7 @@ const Portfolio = () => (
     <PortfolioHead />
     <ProjectLinks projects={projects} />
 
-    <h1>...want to see even more?</h1>
+    <h1>Want to see even more?</h1>
 
     <ExternalSites sites={sites} />
 

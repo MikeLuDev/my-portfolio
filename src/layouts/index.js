@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
-import './index.css'
+import './index.scss'
 
 let links = ["home", "blog", "music", "portfolio", "contact"];
 
@@ -21,7 +21,7 @@ const Header = ({links}) => (
     <div className="header-wrap">
         <img className="header-logo" src="http://via.placeholder.com/128x128"></img>
         {links.map((link, index) => (
-          <NavItem title={link} pathName={pathName} key={`nav-link-${index}`} />
+          <NavItem title={link} key={`nav-link-${index}`} />
         ))}
       </div>
   </header>

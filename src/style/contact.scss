@@ -1,33 +1,30 @@
+@import 'variables';
+
 /******* Contact *******/
 
 .contact-wrap {
   text-align: left;
-  max-width: var(--max-width);
+  max-width: $max-width;
   margin: 0 auto;
-}
-
-.contact-wrap > h1 {
-  margin-bottom: 4rem;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  max-width: calc(var(--max-width) / 2);
-  width: 50%;
-  padding-left: 2rem;
-}
-
-.contact-form > .btn {
-  padding: 1rem 2rem;
-  margin-left: auto;
-}
-
-.contact-form > textarea {
-  min-height: 128px;
-}
-
-.contact-form-message {
-  padding-right: 2rem;
-  width: 50%;
+  h1 {
+    margin-bottom: 4rem;
+  }
+  .btn {
+    padding: 1rem 2rem;
+    margin-left: auto;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: calc($max-width / 2);
+    width: 50%;
+    padding-left: 2rem;
+    textarea {
+      min-height: 128px;
+    }
+  }
+  .contact-form-message {
+    padding-right: 2rem;
+    width: 50%;
+  }
 }

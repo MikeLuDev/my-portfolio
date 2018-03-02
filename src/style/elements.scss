@@ -1,7 +1,9 @@
+@import 'variables';
+
 /******* Links *******/
 a {
     text-decoration: none;
-    color: var(--brand-success) !important;
+    color: $brand-success !important;
     font-weight: 500;
     outline: 0;
 }
@@ -19,60 +21,60 @@ a:visited {
 
 button, .btn {
     padding: 1rem 2rem;
-    background: var(--brand-grey);
+    background: $brand-grey;
     box-shadow: 0;
     font-family: "Roboto";
     font-weight: 500;
     font-size: 1rem;
-    color: var(--brand-white);
+    color: $brand-white;
     cursor: pointer;
-    border: 3px solid var(--brand-white);
+    border: 3px solid $brand-white;
     transition: all 0.1s ease-in-out;
-    border-radius: var(--border-radius);
+    border-radius: $border-radius;
     margin: 0;
 }
 
 button:hover, .btn:hover {
-    background: var(--brand-white);
-    border: 3px solid var(--brand-primary);
-    color: var(--brand-primary);
+    background: $brand-white;
+    border: 3px solid $brand-primary;
+    color: $brand-primary;
     text-decoration: none;
 }
 
 .btn-primary {
-    background: var(--brand-primary);
-    color: var(--brand-white) !important;
+    background: $brand-primary;
+    color: $brand-white !important;
 }
 
 .btn-primary:hover {
-    color: var(--brand-primary) !important;
-    border: 3px solid var(--brand-primary);
+    color: $brand-primary !important;
+    border: 3px solid $brand-primary;
 }
 
 .btn-success {
-    background: var(--brand-success);
-    color: var(--brand-white) !important;
+    background: var($brand-success);
+    color: var($brand-white) !important;
 }
 
 .btn-success:hover {
-    color: var(--brand-success) !important;
-    border: 3px solid var(--brand-success);
+    color: $brand-success !important;
+    border: 3px solid $brand-success;
 }
 
 .btn-danger {
-    background: var(--brand-danger);
-    color: var(--brand-white) !important;
+    background: $brand-danger;
+    color: $brand-white !important;
 }
 
 .btn-danger:hover {
-    color: var(--brand-danger) !important;
-    border: 3px solid var(--brand-danger);
+    color: $brand-danger !important;
+    border: 3px solid $brand-danger;
 }
 
 /******* Cards *******/
 
 .card {
-    box-shadow: 0 0 10px 2px var(--brand-grey);
+    box-shadow: 0 0 10px 2px $brand-grey;
     padding: 2rem 2rem;
     text-align: center;
 }

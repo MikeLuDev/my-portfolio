@@ -21,6 +21,7 @@ const Header = () => (
         <img className="header-logo" src="http://via.placeholder.com/128x128"></img>
         <NavItem title="home" />
         <NavItem title="blog" />
+        <NavItem title="music" />
         <NavItem title="portfolio" />
         <NavItem title="contact" /> 
       </div>

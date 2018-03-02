@@ -1,0 +1,78 @@
+/******* Links *******/
+a {
+    text-decoration: none;
+    color: var(--brand-success) !important;
+    font-weight: 500;
+    outline: 0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: inherit;
+}
+
+
+/******* Buttons *******/
+
+button, .btn {
+    padding: 1rem 2rem;
+    background: var(--brand-grey);
+    box-shadow: 0;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--brand-white);
+    cursor: pointer;
+    border: 3px solid var(--brand-white);
+    transition: all 0.1s ease-in-out;
+    border-radius: var(--border-radius);
+    margin: 0;
+}
+
+button:hover, .btn:hover {
+    background: var(--brand-white);
+    border: 3px solid var(--brand-primary);
+    color: var(--brand-primary);
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: var(--brand-primary);
+    color: var(--brand-white) !important;
+}
+
+.btn-primary:hover {
+    color: var(--brand-primary) !important;
+    border: 3px solid var(--brand-primary);
+}
+
+.btn-success {
+    background: var(--brand-success);
+    color: var(--brand-white) !important;
+}
+
+.btn-success:hover {
+    color: var(--brand-success) !important;
+    border: 3px solid var(--brand-success);
+}
+
+.btn-danger {
+    background: var(--brand-danger);
+    color: var(--brand-white) !important;
+}
+
+.btn-danger:hover {
+    color: var(--brand-danger) !important;
+    border: 3px solid var(--brand-danger);
+}
+
+/******* Cards *******/
+
+.card {
+    box-shadow: 0 0 10px 2px var(--brand-grey);
+    padding: 2rem 2rem;
+    text-align: center;
+}

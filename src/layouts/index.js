@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
-import './index.scss'
+import '../style/main.scss'
 
 let links = ["home", "blog", "music", "portfolio", "contact"];
 

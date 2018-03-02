@@ -1,0 +1,19 @@
+.row {
+    width: 100%;
+    display: flex;
+}
+
+.parallax {
+    /* Requires image here */
+    height: 512px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.attribution {
+    text-align: right;
+    font-size: 0.9rem;
+    font-weight: 500;
+}

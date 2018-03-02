@@ -1,0 +1,79 @@
+/******* Portfolio *******/
+
+.portfolio-wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.portfolio-wrap > h1 {
+  margin-bottom: 6rem;
+}
+
+.portfolio-wrap > h1:first-of-type {
+  margin-bottom: 2rem;
+}
+
+.portfolio-head {
+  margin-bottom: 6rem;
+}
+
+.portfolio-project-container {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.portfolio-project-card {
+  width: 15rem;
+  text-align: center;
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem;
+  height: 10rem;
+  color: var(--brand-primary) !important; 
+  transition: all 0.1s ease-in;
+  background: grey;
+}
+
+.portfolio-project-card:hover {
+  transform: scale(1.05);
+  text-decoration: none !important;
+}
+
+.portfolio-external-sites-wrap {
+  margin-bottom: 6rem;
+}
+
+.portfolio-external-site {
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 2px solid transparent;
+}
+
+.portfolio-external-site:hover {
+  border: 2px solid var(--brand-success);
+  text-decoration: none;
+}
+
+.portfolio-external-site img {
+  max-width: 96px;
+}
+
+.portfolio-external-site div {
+  padding: 0;
+  padding-left: 2rem;
+  width: 100%;
+}
+
+.portfolio-external-site div h2 {
+  line-height: 1;
+}
+
+.portfolio-external-site div p {
+  font-style: italic;
+}

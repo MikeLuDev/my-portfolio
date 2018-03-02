@@ -9,7 +9,7 @@ const cards = [
       Right now I'm on a remote web development project for <a href="http://thechex.com/" rel="noopener" target="_blank">The CHEX</a>.</p>,
       <p>I started learning development studying C# and Unity. As a lifelong gamer,
       I thought that it would be pretty sweet to make some simple video games.
-      After getting through Bob Tabor's
+      After getting through Bob Tabor's course
       <a 
         target="_blank" 
         rel="noopener" 
@@ -30,7 +30,7 @@ const cards = [
       Seven weeks after getting the front end certification I
       found a full time job doing web development.</p>,
       <p>It's very exciting to be in this industry.
-      Waking up in the morning knowing that I'm going to solve problems all day is an amazing feeling.</p>
+      Waking up in the morning knowing that I'm going to solve problems all day is really driving.</p>
     ]
   },
   {
@@ -68,7 +68,7 @@ const cards = [
       </blockquote>,
       <p className="attribution">― Mark Twain, The Innocents Abroad/Roughing It</p>,
       <p>
-        Ole Markey boy said it well there. I haven't had the opportunity to travel as much as I would like,
+        Ol' Markey boy said it well there. I haven't had the opportunity to travel as much as I would like,
         but soon I'll be setting out on a one-year (almost) full US tour. Just me and my dog.
       </p>,
       <p>
@@ -76,7 +76,8 @@ const cards = [
         I'm trying to not have expectations at all and approach this with a clean perspective.
       </p>,
       <p>
-        Additionally, I'm going to try to keep the blog section of this website updated with words and pictures as I journey.
+        Additionally, I'm going to try to keep the blog section of this website updated with
+        some words and pictures as I journey around the world.
       </p>
     ]
   }
@@ -85,7 +86,9 @@ const cards = [
 const IndexCards = ({cards}) => (
   <div className="index-cards-wrap">
     {cards.map((card, index) => (
-      <div className="index-card">
+      <div 
+        className="index-card"
+        key={`index-card-${index}`}>
         <h2>{card.heading}</h2>
         {card.content.map((item) => {
           return item;

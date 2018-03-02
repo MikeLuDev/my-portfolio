@@ -5,8 +5,6 @@ import Helmet from 'react-helmet'
 
 import './index.css'
 
-let pathName = window.location.pathname;
-
 let links = ["home", "blog", "music", "portfolio", "contact"];
 
 const NavItem = ({title}) => (

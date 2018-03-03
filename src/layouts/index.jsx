@@ -32,8 +32,13 @@ const Footer = ({}) => (
     <div className="footer-wrap">
       <div className="footer-left">
         <h3>About this site</h3>
-        <p>The design and construction of this website was done entirely by me.</p>
-        <p>Primary tools include React and Gatsby.</p>
+        <p>The design and construction of this website is done entirely by me.
+          Primary tools include React, Gatsby, and SASS.
+          Icons are provided by <a href="https://fontawesome.com/" target="_blank" rel="noopener">Font Awesome</a>
+        </p>
+        <p>Professional photography by 
+          <a href="https://www.rachelelizabethphotography.net/" target="_blank" rel="noopener"> Rachel Elizabeth Photography</a>
+        </p>
       </div>
       <div className="footer-right">
         <h3>Want to get in touch?</h3>
@@ -78,7 +83,10 @@ class TemplateWrapper extends React.Component {
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
           ]}
-        />
+          script={[
+            { defer: 'true', src: 'https://use.fontawesome.com/releases/v5.0.8/js/all.js'}
+          ]}>
+        </Helmet>
         <Header links={links} />
         <div className="main-content">
           {this.props.children()}

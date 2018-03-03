@@ -50,16 +50,31 @@ let projects = [
 ];
 
 const ProjectCard = ({name, href, img}) => (
-  <a className="portfolio-project-card" href={href} style={{backgroundImage: `url(${img})`}} >
+  <a className="portfolio-project-card"
+    href={href} 
+    style={{backgroundImage: `url(${img})`}}
+    target="blank"
+    rel="noopener" >
     <h2>{name}</h2>
   </a>
 );
 
 const ProjectLinks = ({projects}) => (
-  <div className="portfolio-project-container" target="_blank" rel="noopener">
-    {projects.map((project, index) => (
-      <ProjectCard key={`portfolio-project-card-${index}`} name={project.name} href={project.href} img={project.img} />
-    ))}
+  <div className="portfolio-projects">
+    <div className="portfolio-project-container">
+      {projects.map((project, index) => (
+        <ProjectCard key={`portfolio-project-card-${index}`} name={project.name} href={project.href} img={project.img} />
+      ))}
+    </div>
+  </div>
+);
+
+const ContactMe = () => (
+  <div className="portfolio-contact">
+    <a className="portfolio-contact-resume">
+      <i className="far fa-file-alt" />
+      <h2>Feel free to download my full resume</h2>
+    </a>
   </div>
 );
 
@@ -82,23 +97,43 @@ const ExternalSite = ({name, href, info, img}) => (
 );
 
 const PortfolioHead = ({}) => (
-  <div className="portfolio-head">
-    <h3>
-      Below are a few of my favorite projects - both personal and professional.
-    </h3>
+  <div className="portfolio-head-bg">
+    <div className="portfolio-head-main">
+      <h1>I love to solve problems.</h1>
+      <h3>
+        Here are a few of my favorite projects, both personal and professoinal:
+      </h3>
+    </div>
+  </div>
+);
+
+const Skills = ({}) => (
+  <div className="portfolio-skills">
+    <div className="portfolio-skills-icons">
+      <i className="fab fa-react" />
+      <i className="fab fa-sass" />
+      <i className="fab fa-less" />
+      <i className="fab fa-git" />
+      <i className="fab fa-html5" />
+      <i className="fab fa-css3" />
+      <i className="fab fa-js-square" />
+    </div>
+  </div>
+);
+
+const Tech = () => (
+  <div className="portfolio-tech">
   </div>
 );
 
 const Portfolio = () => (
   <div className="portfolio-wrap">
-    <h1>Portfolio</h1>
     <PortfolioHead />
     <ProjectLinks projects={projects} />
-
-    <h1>Want to see even more?</h1>
-
+    <hr />
+    <Skills />
     <ExternalSites sites={sites} />
-
+    <ContactMe />
   </div>
 )
 

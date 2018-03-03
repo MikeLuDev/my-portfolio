@@ -72,9 +72,30 @@ button:hover, .btn:hover {
 }
 
 /******* Cards *******/
-
 .card {
     box-shadow: 0 0 10px 2px $brand-grey;
     padding: 2rem 2rem;
     text-align: center;
+}
+
+/******* Font Awesome *******/
+
+.fa-react {
+    color: #00d8ff;
+}
+
+.fa-sass {
+    color: #c69;
+}
+
+.fa-less {
+    color: #1d365d;
+}
+
+.fa-git {
+    color: #f34f29;
+}
+
+.fa-github {
+    color: #171515;
 }

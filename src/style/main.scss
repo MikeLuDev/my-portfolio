@@ -27,14 +27,14 @@
   margin: 0 auto;
   text-align: center;
   color: $brand-text;
-  min-height: 70vh;
+  min-height: 75vh;
 }
 
 /******* Header *******/
 header {
   background: $brand-success;
   width: 100%;
-  box-shadow: 0 -4px 10px 1px $brand-text-soft;
+  box-shadow: 0 -4px 8px 1px $brand-text-soft;
   position: sticky;
   top: 0;
 }
@@ -82,19 +82,18 @@ header {
 footer {
   text-align: center;
   background: $brand-text-soft;
-  color: $brand-white;
-  margin-top: 4rem;
-  box-shadow: 0 4px 10px 1px $brand-text-soft;
+  color: $brand-white !important;
+  box-shadow: 0 4px 8px 1px $brand-text-soft;
   width: 100%;
-}
-
-footer * {
-  color: $brand-grey;
+  a {
+    font-size: inherit;
+  }
 }
 
 footer p {
   font-size: 1rem;
   margin-bottom: 0.5rem;
+  color: $brand-grey;
 }
 
 footer h3 {

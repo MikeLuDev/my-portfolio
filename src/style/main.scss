@@ -18,8 +18,8 @@
 }
 
 * > ::selection {
-  background: $brand-selection;
-  color: $brand-white;
+  background: $brand-selection !important;
+  color: $brand-white !important;
 }
 
 .main-content {

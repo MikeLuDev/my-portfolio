@@ -60,12 +60,13 @@ const ProjectCard = ({name, href, img}) => (
 );
 
 const ProjectLinks = ({projects}) => (
-  <div className="portfolio-projects">
-    <div className="portfolio-project-container">
-      {projects.map((project, index) => (
-        <ProjectCard key={`portfolio-project-card-${index}`} name={project.name} href={project.href} img={project.img} />
-      ))}
-    </div>
+  <div className="portfolio-projects-wrap">
+    <h1>Some of my favorite projects</h1>
+      <div className="portfolio-project-container">
+        {projects.map((project, index) => (
+          <ProjectCard key={`portfolio-project-card-${index}`} name={project.name} href={project.href} img={project.img} />
+        ))}
+      </div>
   </div>
 );
 
@@ -80,6 +81,7 @@ const ContactMe = () => (
 
 const ExternalSites = ({sites}) => (
   <div className="portfolio-external-sites-wrap">
+    <h1>You can find more of my work here:</h1>
     {sites.map((site, index) => (
       <ExternalSite name={site.name} href={site.href} info={site.info} img={site.img} />
     ))}
@@ -100,15 +102,13 @@ const PortfolioHead = ({}) => (
   <div className="portfolio-head-bg">
     <div className="portfolio-head-main">
       <h1>I love to solve problems.</h1>
-      <h3>
-        Here are a few of my favorite projects, both personal and professoinal:
-      </h3>
     </div>
   </div>
 );
 
 const Skills = ({}) => (
   <div className="portfolio-skills">
+    <h1>These are my tools</h1>
     <div className="portfolio-skills-icons">
       <i className="fab fa-react" />
       <i className="fab fa-sass" />
@@ -129,9 +129,8 @@ const Tech = () => (
 const Portfolio = () => (
   <div className="portfolio-wrap">
     <PortfolioHead />
-    <ProjectLinks projects={projects} />
-    <hr />
     <Skills />
+    <ProjectLinks projects={projects} />
     <ExternalSites sites={sites} />
     <ContactMe />
   </div>

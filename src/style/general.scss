@@ -36,7 +36,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 h3 {
@@ -57,12 +57,12 @@ blockquote {
 input, textarea {
     background: $brand-white;
     border: 1px solid $brand-text-soft;
-    border-radius: $border-radius;
     margin-bottom: 1rem;
+    margin-top: 0.5rem;
 }
 
 hr {
     max-width: 75%;
     margin: 5rem auto 0 auto;
-    border-top: 1px solid $brand-grey;
+    border-top: 2px solid $brand-grey;
 }

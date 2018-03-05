@@ -21,7 +21,7 @@ p, a, code {
     font-weight: 300;
     line-height: 1.4;
     color: $brand-text-soft;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 }
 
 a:hover {
@@ -40,7 +40,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 p {
@@ -65,4 +65,11 @@ hr {
     max-width: 75%;
     margin: 5rem auto 0 auto;
     border-top: 2px solid $brand-grey;
+}
+
+table {
+    margin: 2rem auto;
+    td,th {
+        padding: 0.5rem 1rem;
+    }
 }

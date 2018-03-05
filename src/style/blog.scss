@@ -1,0 +1,11 @@
+@import 'variables';
+@import 'utility';
+
+.blog-index {
+    text-align: left;
+    max-width: $max-width;
+    margin: 0 auto;
+    h1 {
+        margin: 4rem 0;
+    }
+}

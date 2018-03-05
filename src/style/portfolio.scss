@@ -19,8 +19,8 @@
   }
   .portfolio-head-bg {
     max-width: 100vw;
-    height: 40vh;
-    background: $brand-grey;
+    height: 60vh;
+    background: $brand-text;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,6 +34,7 @@
         margin-top: 0;
         margin-bottom: 2rem;
         font-size: 5rem;
+        color: $brand-white;
       }
     }
   }
@@ -84,9 +85,13 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      svg {
+      width: 100%;
+      svg, img {
         margin: 2rem;
         font-size: 8rem;
+      }
+      img {
+        max-width: 8rem;
       }
     }
   }

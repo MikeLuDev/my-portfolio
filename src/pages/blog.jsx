@@ -6,10 +6,12 @@ const Blog = ({ data }) => (
     <h1>This is a blog, I guess.</h1>
     <p>{data.allMarkdownRemark.totalCount} {data.allMarkdownRemark.totalCount == 1 ? "post" : "posts"}</p>
     {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div key={node.id}>
-          <h3>{`${node.frontmatter.title} - ${node.frontmatter.date}`}</h3>
-          <p>{node.excerpt}</p>
-        </div>
+      <Link to={node.fields.slug} >
+          <div className="blog-post-link" key={node.id}>
+            <h3>{`${node.frontmatter.title} - ${node.frontmatter.date}`}</h3>
+            <p>{node.excerpt}</p>
+          </div>
+        </Link>
       ))}
   </div>
 );
@@ -24,6 +26,9 @@ export const query = graphql `
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
+          }
+          fields {
+            slug
           }
           excerpt
         }

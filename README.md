@@ -17,4 +17,4 @@ Todo:
 * Make contact form functional
 * Add logo
 * Add section to host on-site projects
-* Make blog functional
+* Add blog content

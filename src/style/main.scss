@@ -8,6 +8,7 @@
 @import 'general';
 @import 'variables';
 @import 'blog';
+@import 'posts';  
 
 .template-wrapper {
   min-height: 100vh;
@@ -25,8 +26,7 @@
 
 .main-content {
   width: 100%;
-  margin: 0 auto;
-  text-align: center;
+  margin: 0 auto; 
   color: $brand-text;
   min-height: 75vh;
 }

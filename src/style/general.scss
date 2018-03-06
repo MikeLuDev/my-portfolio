@@ -83,3 +83,13 @@ table {
         padding: 0.5rem 1rem;
     }
 }
+
+pre {
+    background: $brand-grey-light;
+    padding: 2rem !important;
+    border: 2px solid $brand-text-soft;
+    border-radius: $border-radius;
+    code {
+        line-height: 1;
+    }
+}

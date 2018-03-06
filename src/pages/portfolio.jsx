@@ -118,6 +118,7 @@ const Skills = ({}) => (
       <i className="fab fa-sass" />
       <img className="gatsby-logo" src="/img/gatsby-logo.svg" />
       <i className="fab fa-less" />
+      <i className="fab fa-node-js" />
       <i className="fab fa-git" />
       <i className="fab fa-html5" />
       <i className="fab fa-css3" />

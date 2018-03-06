@@ -9,6 +9,7 @@
 @import 'variables';
 @import 'blog';
 @import 'posts';  
+@import 'underconstruction';
 
 .template-wrapper {
   min-height: 100vh;
@@ -60,16 +61,18 @@ header {
   color: $brand-white !important;
   font-weight: 300 !important;
   margin-right: 2rem;
-  border-radius: $border-radius;
   overflow: hidden;
+  &:hover {
+    text-decoration: none;
+    border-bottom: 2px solid $brand-white;
+  }
 }
 
 .nav-link:last-of-type {
   margin-right: 0;
 }
 
-.nav-link:hover, .nav-link:active, .nav-link.active {
-  text-decoration: none;
+.nav-link:active, .nav-link.active {
   text-shadow: 0;
   font-weight: 500 !important;
 }

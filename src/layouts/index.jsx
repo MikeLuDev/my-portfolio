@@ -1,7 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
+import Helmet from 'react-helmet';
+import browserHistory from 'react-router';
 
 import '../style/main.scss'
 
@@ -10,7 +11,7 @@ let links = ["home", "blog", "music", "portfolio", "contact"];
 const NavItem = ({title}) => (
   <Link 
     id={`nav-link-${title}`}
-    className={`nav-link`} 
+    className={`nav-link active`} 
     to={(title == "home") ? "/" : title}>
     {title.charAt(0).toUpperCase() + title.slice(1)}
   </Link>
@@ -19,7 +20,7 @@ const NavItem = ({title}) => (
 const Header = ({links}) => (
   <header>
     <div className="header-wrap">
-        <img className="header-logo" src="http://via.placeholder.com/128x128"></img>
+        <img className="header-logo" src="/img/penguin.svg"></img>
         {links.map((link, index) => (
           <NavItem title={link} key={`nav-link-${index}`} />
         ))}
@@ -74,7 +75,6 @@ class TemplateWrapper extends React.Component {
   }
 
   render() {
-    console.log(this.state.window_path);
     return (
       <div className="template-wrapper">
         <Helmet
@@ -101,4 +101,4 @@ TemplateWrapper.propTypes = {
   children: PropTypes.func,
 }
 
-export default TemplateWrapper
+export default TemplateWrapper;

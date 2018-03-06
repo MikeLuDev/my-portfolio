@@ -18,7 +18,8 @@
     flex-direction: column;
     max-width: calc($max-width / 2);
     width: 50%;
-    padding-left: 2rem;
+    margin-right: 2rem;
+    color: $brand-text-soft;
     textarea {
       min-height: 128px;
     }

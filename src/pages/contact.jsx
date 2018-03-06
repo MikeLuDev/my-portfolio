@@ -6,11 +6,11 @@ const FormMessage = () => (
   <h2>Drop me a line!</h2>
   <p>
     Do you have a business inquiry? Comment? Question?
-    Want to just say hello? I would love to hear from you.
+    Want to just say hello?
   </p>
 
   <p>
-    Feel free to shoot me an email and I'll get to you as soon as possible!
+    Feel free to shoot me a message and I'll get to you as soon as possible!
   </p>
   </div>
 );
@@ -32,8 +32,8 @@ const Contact = () => (
     <h1>Contact Me</h1>
 
     <div className="row">
-      <FormMessage />
       <ContactForm />
+      <FormMessage />
     </div>
   </div>
 );

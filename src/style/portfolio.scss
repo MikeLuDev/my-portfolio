@@ -30,6 +30,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      text-align: center;
       h1 {
         margin-top: 0;
         margin-bottom: 2rem;
@@ -41,7 +42,7 @@
   .portfolio-projects-wrap {
     max-width: 100vw;
     background: $brand-text-soft;
-    color: $brand-grey;
+    color: $brand-grey-light;
     .portfolio-project-container {
       max-width: $max-width;
       margin: 0 auto;
@@ -54,9 +55,10 @@
         text-align: center;
         margin: 1rem;
         height: 18rem;
-        background: $brand-grey;
+        background: $brand-grey-light;
         display: flex;
         transition: all 0.05s ease-in-out;
+        border: 3px solid $brand-grey-dark;
         &:hover {
           > h2 {
             opacity: 1;
@@ -72,7 +74,6 @@
           transition: all 0.05s ease-in-out;
         }
         &:hover {
-          border: 2px solid $brand-primary;
           text-decoration: none !important;
         }
       }
@@ -107,7 +108,8 @@
       padding: 1rem;
       border: 2px solid transparent;
       &:hover {
-        border: 2px solid $brand-text;
+        border: 2px solid $brand-grey-dark;
+        border-radius: $border-radius;
         text-decoration: none;
       }
       div {
@@ -119,7 +121,7 @@
         }
       }
       img {
-        max-width: 96px;
+        height: 6rem;
       }
     }
   }
@@ -130,6 +132,7 @@
       align-items: center;
       background: $brand-success;
       padding: 1rem;
+      border-radius: $border-radius;
       * {
         font-size: 2rem;
         color: $brand-white;

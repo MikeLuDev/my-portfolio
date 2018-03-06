@@ -9,12 +9,12 @@ This project was built with the following tools:
 * ReactJS
 * Gatsby
 
-Todo:
+TODO (in order of importance):
 
 * Fill out music page
 * Finish portfolio page
-* Add transitions with react-transition-group (maybe I can do this on a layout component for full page loads?)
-* Make contact form functional
 * Add logo
-* Add section to host on-site projects
-* Add blog content
+* Make contact form functional (check out nodemailer)
+* Add blog content and define styling
+* Add transitions with react-transition-group (maybe I can do this on a layout component for full page loads?
+* Add "projects" section or similar

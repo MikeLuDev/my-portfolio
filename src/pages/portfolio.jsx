@@ -7,12 +7,16 @@ let sites = [
     href: "https://codepen.io/MikeLuDev/#",
     info: "A collection of fun little apps, doodles, and tests. Mostly front end stuff.",
     img: "/img/codepen-logo.png"
-  },
-  {
+  },{
     name: "Github",
     href: "https://github.com/MikeLuDev",
     info: "My public repos, including the code for this site.",
     img: "/img/github-logo.png"
+  },{
+    name: "Glitch",
+    href: "https://glitch.com/@MikeLuDev",
+    info: "Small backend projects including API servers and microservices.",
+    img: "/img/glitch-logo.png"
   }
 ];
 

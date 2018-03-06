@@ -16,6 +16,8 @@ const Blog = ({ data }) => (
   </div>
 );
 
+// Export graphql query which returns all .md files sorted by date with the newest first
+// TODO: implement sorting
 export const query = graphql `
   query IndexQuery {
     allMarkdownRemark(sort: {fields: [frontmatter___date], order: ASC}) {

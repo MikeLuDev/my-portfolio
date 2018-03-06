@@ -22,34 +22,21 @@ let sites = [
 
 let projects = [
   {
-    name: "Project Name",
-    href: "www.michaelwlu.com",
-    img: "/img/blazek-1200.jpg"
-  },
-  {
-    name: "Project Name",
-    href: "www.michaelwlu.com",
-    img: "/img/blazek-1200.jpg"
-  },
-  {
-    name: "Project Name",
-    href: "www.michaelwlu.com",
-    img: "/img/blazek-1200.jpg"
-  },
-  {
-    name: "Project Name",
-    href: "www.michaelwlu.com",
-    img: "/img/blazek-1200.jpg"
-  },
-  {
-    name: "Project Name",
-    href: "www.michaelwlu.com",
-    img: "/img/blazek-1200.jpg"
-  },
-  {
-    name: "Project Name",
-    href: "www.michaelwlu.com",
-    img: "/img/blazek-1200.jpg"
+    name: "time-stamper",
+    href: "https://time-stamper.glitch.me/",
+    img: "/img/projects/time-stamper.png"
+  },{
+    name: "Simon",
+    href: "https://codepen.io/MikeLuDev/pen/veevZO",
+    img: "/img/projects/simon.png"
+  },{
+    name: "Calculator",
+    href: "https://codepen.io/MikeLuDev/pen/mMXNNL",
+    img: "/img/projects/calc.png"
+  },{
+    name: "Pomodoro Clock",
+    href: "https://codepen.io/MikeLuDev/pen/bRZMqp",
+    img: "/img/projects/pomodoro.png"
   }
 ];
 

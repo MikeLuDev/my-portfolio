@@ -11,7 +11,7 @@ let links = ["home", "blog", "music", "portfolio", "contact"];
 const NavItem = ({title}) => (
   <Link 
     id={`nav-link-${title}`}
-    className={`nav-link active`} 
+    className={`nav-link `}
     to={(title == "home") ? "/" : title}>
     {title.charAt(0).toUpperCase() + title.slice(1)}
   </Link>

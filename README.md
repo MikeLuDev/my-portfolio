@@ -1,6 +1,11 @@
 # This is my portfolio website
 
-Currently a work in progress, this will eventually be the codebase for my portfolio website and blog.
+Let's call this version BETA!
+
+## Features
+
+* My portfolio because I do web development. Duh.
+* Personal blog which systematically turns .md files into blog posts
 
 ## Built with
 

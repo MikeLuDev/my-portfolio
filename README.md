@@ -13,6 +13,7 @@ TODO (in order of importance):
 
 * Fill out music page
 * Finish portfolio page
+* Fix .scss files not building properly with `gatsby build`
 * Add logo
 * Make contact form functional (check out nodemailer)
 * Add blog content and define styling

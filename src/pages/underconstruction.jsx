@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
+import penguin from "../img/penguin.svg";
+
 class UnderConstruction extends React.Component {
     constructor(props) {
         super(props);
@@ -13,7 +15,7 @@ class UnderConstruction extends React.Component {
         return (
             <div className="under-construction">
                 <h1>Under Construction</h1>
-                <img src="/img/penguin.svg" />
+                <img src={penguin} />
             </div>
         );
     }

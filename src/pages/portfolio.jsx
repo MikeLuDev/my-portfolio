@@ -1,22 +1,32 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
+import codePenLogo from "../img/codepen-logo.png";
+import githubLogo from "../img/github-logo.png";
+import glitchLogo from "../img/glitch-logo.png";
+import timeStamperImg from "../img/projects/time-stamper.png";
+import simonImg from "../img/projects/simon.png";
+import pomImg from "../img/projects/pomodoro.png";
+import calcImg from "../img/projects/calc.png";
+import gatsbyLogo from "../img/gatsby-logo.svg";
+
+
 let sites = [
   {
     name: "Codepen",
     href: "https://codepen.io/MikeLuDev/#",
     info: "A collection of fun little apps, doodles, and tests. Mostly front end stuff.",
-    img: "/img/codepen-logo.png"
+    img: codePenLogo
   },{
     name: "Github",
     href: "https://github.com/MikeLuDev",
     info: "My public repos, including the code for this site.",
-    img: "/img/github-logo.png"
+    img: githubLogo
   },{
     name: "Glitch",
     href: "https://glitch.com/@MikeLuDev",
     info: "Small backend projects including API servers and microservices.",
-    img: "/img/glitch-logo.png"
+    img: glitchLogo
   }
 ];
 
@@ -24,19 +34,19 @@ let projects = [
   {
     name: "time-stamper",
     href: "https://time-stamper.glitch.me/",
-    img: "/img/projects/time-stamper.png"
+    img: timeStamperImg
   },{
     name: "Simon",
     href: "https://codepen.io/MikeLuDev/pen/veevZO",
-    img: "/img/projects/simon.png"
+    img: simonImg
   },{
     name: "Calculator",
     href: "https://codepen.io/MikeLuDev/pen/mMXNNL",
-    img: "/img/projects/calc.png"
+    img: calcImg
   },{
     name: "Pomodoro Clock",
     href: "https://codepen.io/MikeLuDev/pen/bRZMqp",
-    img: "/img/projects/pomodoro.png"
+    img: pomImg
   }
 ];
 
@@ -103,7 +113,7 @@ const Skills = ({}) => (
     <div className="portfolio-skills-icons">
       <i className="fab fa-react" />
       <i className="fab fa-sass" />
-      <img className="gatsby-logo" src="/img/gatsby-logo.svg" />
+      <img className="gatsby-logo" src={gatsbyLogo} />
       <i className="fab fa-less" />
       <i className="fab fa-node-js" />
       <i className="fab fa-git" />

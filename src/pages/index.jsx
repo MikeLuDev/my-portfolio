@@ -1,12 +1,14 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
+import herobg from '../img/stars.jpg';
+
 const cards = [
   {
     heading: "Developer",
     content: [
       <p>I'm a self taught developer just getting started in the industry.
-      Right now I'm on a remote web development project for <a href="http://thechex.com/" rel="noopener" target="_blank">The CHEX</a>.</p>,
+      Right now I'm on a remote web development project for <a href="http://www.thechex.com/" rel="noopener" target="_blank">The CHEX</a>.</p>,
       <p>I started learning development studying C# and Unity. As a lifelong gamer,
       I thought that it would be pretty sweet to make some simple video games.
       After getting through Bob Tabor's course
@@ -102,7 +104,7 @@ const IndexCards = ({cards}) => (
 
 const IndexPage = () => (
   <div className="index-wrap">
-    <div className="index-hero">
+    <div className="index-hero" style={{backgroundImage: `url(${herobg})`}}>
       <h1>Welcome to my little piece of the internet.</h1>
     </div>
     <div className="index-content" id="index-content">

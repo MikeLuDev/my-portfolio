@@ -4,7 +4,9 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import browserHistory from 'react-router';
 
-import '../style/main.scss'
+import '../style/main.scss';
+
+import penguin from "../img/penguin.svg";
 
 let links = ["home", "blog", "music", "portfolio", "contact"];
 
@@ -20,7 +22,7 @@ const NavItem = ({title}) => (
 const Header = ({links}) => (
   <header>
     <div className="header-wrap">
-        <img className="header-logo" src="/img/penguin.svg"></img>
+        <img className="header-logo" src={penguin}></img>
         {links.map((link, index) => (
           <NavItem title={link} key={`nav-link-${index}`} />
         ))}

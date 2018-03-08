@@ -9,7 +9,7 @@ date: "2018-03-06"
 
 First post? Here we will test some text and see just what it will do.
 
-<img src="/img/projects/calc.png">
+<img src='../img/me.jpg' />
 
 And another paragraph?
 

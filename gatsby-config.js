@@ -18,5 +18,19 @@ module.exports = {
         precision: 5,
       },
     },
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 768,
+            },
+          },
+        ],
+      },
+    },
   ]
 }

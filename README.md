@@ -18,3 +18,4 @@ TODO (in order of importance):
 * Add blog content and define styling
 * Add transitions with react-transition-group (maybe I can do this on a layout component for full page loads?
 * Add "projects" section or similar
+* Move all static files (images, etc.) to /public/static/

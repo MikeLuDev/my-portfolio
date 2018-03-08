@@ -16,6 +16,7 @@ This project was built with the following tools:
 
 TODO (in order of importance):
 
+* MOBILE RESPONSIVENESS
 * Fill out music page
 * Finish portfolio page
 * Make contact form functional (check out nodemailer)

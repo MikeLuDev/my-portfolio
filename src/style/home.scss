@@ -18,7 +18,11 @@
     h1 {
       color: $brand-white;
       max-width: 768px;
-      font-size: 5rem;
+    }
+  }
+  @media #{$phone} {
+    .index-hero {
+      height: 75vh;
     }
   }
 }
@@ -27,6 +31,7 @@
   text-align: left;
   max-width: $max-width;
   margin: 0 auto;
+  @extend %main-padding;
   h1 {
     padding: 0;
     margin: 0;

@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'utility';
 
 /******* Contact *******/
 
@@ -6,29 +7,36 @@
   text-align: left;
   max-width: $max-width;
   margin: 0 auto;
-  h1 {
-    margin-bottom: 4rem;
-  }
-  .btn {
-    padding: 1rem 2rem;
-    margin-left: auto;
-  }
-  .contact-form {
-    max-width: calc($max-width / 2);
-    width: 50%;
-    margin-right: 2rem;
-    color: $brand-text-soft;
-    textarea {
-      min-height: 128px;
-    }
-    .form-row {
+  display: flex;
+  flex-direction: column;
+  @extend %main-padding;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    .contact-form, .contact-form-message {
       width: 100%;
-      display: flex;
-      flex-direction: column;
+      margin-bottom: 2rem;
+      @media #{$tablet}, #{$desktop} {
+        width: 50%;
+      }
+    }
+    .contact-form {
+      max-width: 40rem;
+      color: $brand-text-soft;
+      .form-row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .btn {
+          max-width: 8rem;
+        }
+      }
+    }
+    .contact-form-message {
+      @media #{$tablet}, #{$desktop} {
+        padding-right: 2rem;
+      }
     }
   }
-  .contact-form-message {
-    padding-right: 2rem;
-    width: 50%;
-  }
+  
 }

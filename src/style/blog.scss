@@ -2,7 +2,10 @@
 @import 'utility';
 
 .blog-post {
+    margin: 0 auto;
+    max-width: $max-width;
     padding-bottom: 4rem;
+    @extend %main-padding;
     * {
         margin: 0;
         padding: 0;
@@ -17,6 +20,7 @@
     text-align: left;
     max-width: $max-width;
     margin: 0 auto;
+    @extend %main-padding;
     h1 {
         margin: 2rem 0;
     }

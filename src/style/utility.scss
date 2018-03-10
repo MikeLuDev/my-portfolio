@@ -18,3 +18,12 @@
     font-size: 0.9rem;
     font-weight: 500;
 }
+
+%main-padding {
+    @media #{$phone} {
+        padding: 0 1rem;
+    }
+    @media #{$tablet} {
+        padding: 0 2rem;
+    }
+}

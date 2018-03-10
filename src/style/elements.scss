@@ -20,18 +20,19 @@ a:visited {
 /******* Buttons *******/
 
 button, .btn {
-    padding: 1rem 2rem;
+    padding: 1.25rem 2rem;
     background: $brand-grey;
     box-shadow: 0;
     font-family: "Roboto";
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: $brand-white;
     cursor: pointer;
     border: 3px solid $brand-white;
     transition: all 0.1s ease-in-out;
     border-radius: $border-radius;
     margin: 0;
+    width: auto !important;
 }
 
 button:hover, .btn:hover {

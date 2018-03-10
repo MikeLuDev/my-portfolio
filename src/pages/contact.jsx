@@ -16,11 +16,9 @@ const FormMessage = () => (
   </p>
   </div>
 );
-
 const Contact = () => (
   <div className="contact-wrap">
     <h1>Contact Me</h1>
-
     <div className="row">
       <ContactForm />
       <FormMessage />

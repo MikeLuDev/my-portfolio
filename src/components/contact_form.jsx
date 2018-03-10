@@ -26,16 +26,19 @@ export default class ContactForm extends React.Component {
         });
     }
 
-    handleSubmit = e => {
+    handleSubmit = (e) => {
+        e.preventDefault();
+
+        console.log(`Submitting form data`);
+        
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact", ...this.state })
+          body: encode({ "form-name": "contact-form", ...this.state })
         })
           .then(() => alert("Success!"))
           .catch(error => alert(error));
     
-        e.preventDefault();
     };
 
     render() {

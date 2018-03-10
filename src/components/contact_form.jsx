@@ -44,7 +44,12 @@ handleChange = e => this.setState({ [e.target.name]: e.target.value });
                 className="contact-form"
                 onSubmit={this.handleSubmit} 
                 method="post"
-                data-netlify="true" >
+                data-netlify="true"
+                data-netlify-honeypot="catch-field" >
+                <div hidden className="form-row">
+                    <label hidden >Don't fill this out!</label>
+                    <input hidden type="text" name="catch-field" />
+                </div>
                 <div className="form-row">
                     <label>Name:</label>
                     <input type="text" name="name" value={name} onChange={this.handleChange} />

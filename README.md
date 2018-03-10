@@ -2,23 +2,29 @@
 
 Let's call this version BETA!
 
-## Features
+## Purpose
 
 * My portfolio because I do web development. Duh.
 * Personal blog which systematically turns .md files into blog posts
 
 ## Built with
 
-This project was built with the following tools:
+### Tools
+
+This project was mostly built with the following:
 
 * ReactJS
 * Gatsby
+* SASS
 
-TODO (in order of importance):
+### Deployment
 
-* MOBILE RESPONSIVENESS
+This site is deployed through [Netlify](https://www.netlify.com)
+
+## TODO (in order of importance):
+
 * Fill out music page
-* Finish portfolio page
 * Add more blog content and define styling
 * Add transitions with react-transition-group (maybe I can do this on a layout component for full page loads?
 * Add "projects" section or similar
+* Add resume to resume download link

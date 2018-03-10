@@ -75,7 +75,7 @@ const ContactMe = () => (
   <div className="portfolio-contact">
     <a className="portfolio-contact-resume">
       <i className="far fa-file-alt" />
-      <h2>Feel free to download my full resume</h2>
+      <h2>Download my resume</h2>
     </a>
   </div>
 );

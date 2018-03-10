@@ -11,60 +11,54 @@ const encode = (data) => {
 export default class ContactForm extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            name: '',
-            email: '',
-            message: ''
+        this.state = { 
+            name: "", 
+            email: "", 
+            message: "" 
         }
-        this.handleSubmit = this.handleChange.bind(this);
-        this.handleChange = this.handleChange.bind(this);
     }
 
-    handleChange = (e) => {
-        this.setState({
-            [e.target.name]: e.target.value
-        });
-    }
 
-    handleSubmit = (e) => {
-        e.preventDefault();
+    handleSubmit = e => {
+        console.log(e);
 
-        console.log(`Submitting form data`);
-        
         fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact-form", ...this.state })
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact-form", ...this.state })
         })
-          .then(() => alert("Success!"))
-          .catch(error => alert(error));
-    
+        .then(() => alert("Success!"))
+        .catch(error => alert(error));
+
+        e.preventDefault();
     };
 
+handleChange = e => this.setState({ [e.target.name]: e.target.value });
+
     render() {
+        const { name, email, message } = this.state;
+
         return (
-            <form className="contact-form"
+            <form 
                 name="contact-form"
+                className="contact-form"
+                onSubmit={this.handleSubmit} 
                 method="post"
-                action="/"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                onSubmit={this.handleSubmit} >
-                <input type="hidden" name="bot-field" />
+                data-netlify="true" >
                 <div className="form-row">
-                    <label>Name</label>
-                    <input type="text" name="name" onChange={this.handleChange} />
+                    <label>Name:</label>
+                    <input type="text" name="name" value={name} onChange={this.handleChange} />
                 </div>
                 <div className="form-row">
-                    <label>Email</label>
-                    <input type="email" name="email" onChange={this.handleChange} />
+                    <label>Email:</label>
+                    <input type="email" name="email" value={email} onChange={this.handleChange} />
                 </div>
                 <div className="form-row">
-                    <label>Message</label>
-                    <textarea name="message" onChange={this.handleChange} />
+                    <label>Message:</label>
+                    <textarea name="message" value={message} onChange={this.handleChange} />
                 </div>
-                <div>
-                    <input className="btn btn-success" type="submit" value="Send" />
+                <div className="form-row">
+                    <button type="submit" className="btn btn-success">Send</button>
                 </div>
             </form>
         );

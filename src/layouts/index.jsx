@@ -91,7 +91,6 @@ class TemplateWrapper extends React.Component {
         </Helmet>
         <Header links={links} />
           <div className="main-content">
-
           {this.props.children()}
         </div>
         <Footer />

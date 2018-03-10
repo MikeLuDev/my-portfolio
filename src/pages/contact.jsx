@@ -31,6 +31,13 @@ const Contact = () => (
   <div className="contact-wrap">
     <h1>Contact Me</h1>
 
+      {/* Honeypot form field to catch some bots, maybe */}
+      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <textarea name="message"></textarea>
+      </form>
+
     <div className="row">
       <ContactForm />
       <FormMessage />

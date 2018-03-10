@@ -90,7 +90,15 @@ class TemplateWrapper extends React.Component {
           ]}>
         </Helmet>
         <Header links={links} />
-        <div className="main-content">
+          <div className="main-content">
+
+            {/* Honeypot form field to catch some bots, maybe */}
+            <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+              <input type="text" name="name" />
+              <input type="email" name="email" />
+              <textarea name="message"></textarea>
+            </form>
+
           {this.props.children()}
         </div>
         <Footer />

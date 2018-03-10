@@ -52,8 +52,8 @@ button:hover, .btn:hover {
 }
 
 .btn-success {
-    background: var($brand-success);
-    color: var($brand-white) !important;
+    background: $brand-success;
+    color: $brand-white !important;
 }
 
 .btn-success:hover {

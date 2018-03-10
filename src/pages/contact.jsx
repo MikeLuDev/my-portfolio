@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
+import ContactForm from '../components/contact_form.jsx';
+
 const FormMessage = () => (
   <div className="contact-form-message">
   <h2>Drop me a line!</h2>
@@ -15,28 +17,9 @@ const FormMessage = () => (
   </div>
 );
 
-const ContactForm = () => (
-  <form className="contact-form">
-    Name:
-    <input type="text" />
-    Email:
-    <input type="text" />
-    Message:
-    <textarea type="textarea" />
-    <input className="btn btn-success" type="submit" value="Send" />
-  </form>
-);
-
 const Contact = () => (
   <div className="contact-wrap">
     <h1>Contact Me</h1>
-
-      {/* Honeypot form field to catch some bots, maybe */}
-      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-        <input type="text" name="name" />
-        <input type="email" name="email" />
-        <textarea name="message"></textarea>
-      </form>
 
     <div className="row">
       <ContactForm />

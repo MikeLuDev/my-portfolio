@@ -14,14 +14,17 @@
     margin-left: auto;
   }
   .contact-form {
-    display: flex;
-    flex-direction: column;
     max-width: calc($max-width / 2);
     width: 50%;
     margin-right: 2rem;
     color: $brand-text-soft;
     textarea {
       min-height: 128px;
+    }
+    .form-row {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
     }
   }
   .contact-form-message {

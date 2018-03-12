@@ -10,6 +10,8 @@ import pomImg from "../img/projects/pomodoro.png";
 import calcImg from "../img/projects/calc.png";
 import gatsbyLogo from "../img/gatsby-logo.svg";
 
+import resume from "../file/resume-Michael-Lu.pdf";
+
 
 let sites = [
   {
@@ -73,7 +75,7 @@ const ProjectLinks = ({projects}) => (
 
 const ContactMe = () => (
   <div className="portfolio-contact">
-    <a className="portfolio-contact-resume">
+    <a className="portfolio-contact-resume" href={resume} download>
       <i className="far fa-file-alt" />
       <h2>Download my resume</h2>
     </a>

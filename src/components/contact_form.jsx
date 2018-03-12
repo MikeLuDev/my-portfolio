@@ -27,7 +27,7 @@ export default class ContactForm extends React.Component {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact-form", ...this.state })
         })
-        .then(() => alert("Success!"))
+        .then(() => alert("Sent! I'll get back to you as soon as I can."))
         .catch(error => alert(error));
 
         e.preventDefault();

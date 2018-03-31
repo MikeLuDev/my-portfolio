@@ -6,13 +6,15 @@
     max-width: $max-width;
     padding-bottom: 4rem;
     @extend %main-padding;
-    * {
-        margin: 0;
-        padding: 0;
-        margin-bottom: 2rem;
-    }
     h1, h2 {
-        margin: 2rem 0;
+        margin: 32px 0;
+    }
+    p {
+        margin: 0;
+        margin-bottom: 16px;
+    }
+    .gatsby-resp-image-link {
+        margin: 64px 0;
     }
 }
 

@@ -10,7 +10,7 @@ const Blog = ({ data }) => (
         <div className="blog-link">
             <div className="blog-link-head" key={node.id}>
               <h3>{`${node.frontmatter.title}`}</h3>
-              <p>{`on ${node.frontmatter.date}`}</p>
+              <p>{`${node.frontmatter.date}`}</p>
             </div>
         </div>
       </Link>

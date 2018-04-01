@@ -12,18 +12,17 @@ import gatsbyLogo from "../img/gatsby-logo.svg";
 
 import resume from "../file/resume-Michael-Lu.pdf";
 
-
 let sites = [
   {
-    name: "Codepen",
-    href: "https://codepen.io/MikeLuDev/#",
-    info: "A collection of fun little apps, doodles, and tests. Mostly front end stuff.",
-    img: codePenLogo
-  },{
     name: "Github",
     href: "https://github.com/MikeLuDev",
     info: "My public repos, including the code for this site.",
     img: githubLogo
+  },{
+    name: "Codepen",
+    href: "https://codepen.io/MikeLuDev/#",
+    info: "A collection of fun little apps, doodles, and tests. Mostly front end stuff.",
+    img: codePenLogo
   },{
     name: "Glitch",
     href: "https://glitch.com/@MikeLuDev",

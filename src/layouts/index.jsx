@@ -8,7 +8,7 @@ import '../style/main.scss';
 
 import penguin from "../img/penguin.svg";
 
-let links = ["home", "blog", "music", "portfolio", "contact"];
+const links = ["home", "blog", "music", "portfolio", "contact"];
 
 const NavItem = ({title}) => (
   <Link 

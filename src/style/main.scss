@@ -59,14 +59,12 @@ header {
 
 .nav-link {
   font-size: 1.5rem;
-  transition: background-color 0.2s ease-in-out;
   color: $brand-white !important;
   font-weight: 300 !important;
   margin-right: 2rem;
   overflow: hidden;
   &:hover {
     text-decoration: none;
-    border-bottom: 2px solid $brand-white;
   }
 }
 
@@ -74,7 +72,7 @@ header {
   margin-right: 0;
 }
 
-.nav-link:active, .nav-link.active {
+.nav-link:active, .nav-link.active, .nav-link:hover {
   text-shadow: 0;
   font-weight: 500 !important;
 }

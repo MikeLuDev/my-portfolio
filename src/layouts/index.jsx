@@ -10,25 +10,56 @@ import penguin from "../img/penguin.svg";
 
 const links = ["home", "blog", "music", "portfolio", "contact"];
 
-const NavItem = ({title}) => (
+const NavItem = ({active, title, onClick}) => (
   <Link 
-    id={`nav-link-${title}`}
-    className={`nav-link `}
-    to={(title == "home") ? "/" : title}>
+    className={`nav-link${active ? ' active' : ''}`}
+    to={(title == "home") ? "/" : title} 
+    onClick={onClick} >
     {title.charAt(0).toUpperCase() + title.slice(1)}
   </Link>
 );
 
-const Header = ({links}) => (
-  <header>
-    <div className="header-wrap">
-        <img className="header-logo" src={penguin}></img>
-        {links.map((link, index) => (
-          <NavItem title={link} key={`nav-link-${index}`} />
-        ))}
-      </div>
-  </header>
-)
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      active_tab: 'home'
+    }
+    this.setActiveTab = this.setActiveTab.bind(this); 
+  }
+
+  setActiveTab(tabName) {
+    this.setState({
+      active_tab: tabName
+    })
+  }
+
+  render() {
+    return (
+      <header>
+        <div className="header-wrap">
+            <img className="header-logo" src={penguin} />
+            <NavItem
+              title={'home'}
+              active={this.state.active_tab == 'home'}
+              onClick={() => this.setActiveTab('home')} />
+            <NavItem
+              title={'blog'}
+              active={this.state.active_tab == 'blog'}
+              onClick={() => this.setActiveTab('blog')} />
+            <NavItem
+              title={'portfolio'}
+              active={this.state.active_tab == 'portfolio'}
+              onClick={() => this.setActiveTab('portfolio')} />
+            <NavItem
+              title={'contact'}
+              active={this.state.active_tab == 'contact'}
+              onClick={() => this.setActiveTab('contact')} />
+          </div>
+      </header>
+    )
+  }
+}
 
 const Footer = ({}) => (
   <footer>
@@ -45,7 +76,7 @@ const Footer = ({}) => (
       </div>
       <div className="footer-right">
         <h3>Want to get in touch?</h3>
-        <p>For business inquiries or any questions please <Link to="contact">contact me.</Link> <a></a></p>
+        <p>For business inquiries or any questions please <Link to="contact">contact me.</Link><a></a></p>
       </div>
     </div>
   </footer>
@@ -89,11 +120,11 @@ class TemplateWrapper extends React.Component {
             { defer: 'true', src: 'https://use.fontawesome.com/releases/v5.0.8/js/all.js'}
           ]}>
         </Helmet>
-        <Header links={links} />
+          <Header links={links} />
           <div className="main-content">
           {this.props.children()}
-        </div>
-        <Footer />
+          </div>
+          <Footer />
       </div>
     );
   }

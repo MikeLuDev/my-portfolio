@@ -23,7 +23,8 @@ This site is deployed through [Netlify](https://www.netlify.com)
 
 ## TODO (in order of importance):
 
-* Fill out music page
-* Add more blog content and further define styling
+* Fix navbar on mobile screens
+* Add blog content weekly
 * Add transitions with react-transition-group (maybe I can do this on a layout component for full page loads?)
 * Add "projects" section or similar to locally host future projects
+* Populate music page with content

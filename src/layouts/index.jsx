@@ -38,24 +38,23 @@ class Header extends React.Component {
     return (
       <header>
         <div className="header-wrap">
-            <img className="header-logo" src={penguin} />
-            <NavItem
-              title={'home'}
-              active={this.state.active_tab == 'home'}
-              onClick={() => this.setActiveTab('home')} />
-            <NavItem
-              title={'blog'}
-              active={this.state.active_tab == 'blog'}
-              onClick={() => this.setActiveTab('blog')} />
-            <NavItem
-              title={'portfolio'}
-              active={this.state.active_tab == 'portfolio'}
-              onClick={() => this.setActiveTab('portfolio')} />
-            <NavItem
-              title={'contact'}
-              active={this.state.active_tab == 'contact'}
-              onClick={() => this.setActiveTab('contact')} />
-          </div>
+          <NavItem
+            title={'home'}
+            active={this.state.active_tab == 'home'}
+            onClick={() => this.setActiveTab('home')} />
+          <NavItem
+            title={'blog'}
+            active={this.state.active_tab == 'blog'}
+            onClick={() => this.setActiveTab('blog')} />
+          <NavItem
+            title={'portfolio'}
+            active={this.state.active_tab == 'portfolio'}
+            onClick={() => this.setActiveTab('portfolio')} />
+          <NavItem
+            title={'contact'}
+            active={this.state.active_tab == 'contact'}
+            onClick={() => this.setActiveTab('contact')} />
+        </div>
       </header>
     )
   }
@@ -81,24 +80,6 @@ const Footer = ({}) => (
     </div>
   </footer>
 );
-
-/* WRITE A BLOG POST ABOUT THIS
-const TemplateWrapper = ({ children }) => (
-  <div className="template-wrapper">
-    <Helmet
-      title="Michael Lu | Web Developer"
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
-    <Header links={links} />
-    <div className="main-content">
-      {children()}
-    </div>
-    <Footer />
-  </div>
-)*/
 
 class TemplateWrapper extends React.Component {
   constructor(props) {
